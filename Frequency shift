@@ -1,0 +1,15 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+x = np.linspace(0,10*np.pi, 256)
+y = np.sin(x)*np.sin(x)            # Multiplying by a sin wave causes frequency to shift upwards
+y2 = np.sin(x)                     # y2 graphed to compare
+
+
+plt.axhline()
+plt.axvline()
+
+plt.plot(x, y)
+plt.plot(x, y2)
+plt.show()
